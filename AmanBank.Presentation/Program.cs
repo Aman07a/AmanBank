@@ -1,4 +1,6 @@
-﻿namespace AmanBank.Presentation
+﻿using System;
+
+namespace AmanBank.Presentation
 {
 	class Program
 	{
@@ -26,7 +28,46 @@
 			// Check username and password
 			if (userName == "system" && password == "manager")
 			{
-				System.Console.WriteLine("TO DO: Main menu here");
+				// Declare variable to store menu choice
+				int mainMenuChoice = -1;
+
+				do
+				{
+					System.Console.WriteLine("TODO: Main menu here");
+					System.Console.WriteLine("1. Customers");
+					System.Console.WriteLine("2. Accounts");
+					System.Console.WriteLine("3. Funds Transfer");
+					System.Console.WriteLine("4. Funds Transfer Statement");
+					System.Console.WriteLine("5. Account Statement");
+					System.Console.WriteLine("0. Exit");
+
+					System.Console.WriteLine("Enter choice");
+					mainMenuChoice = int.Parse(System.Console.ReadLine());
+
+					// Switch-case to check menu choice
+					switch (mainMenuChoice)
+					{
+						// TODO: Customers
+						case 1:
+							break;
+						// TODO:  Accounts
+						case 2:
+							break;
+						// TODO: Funds Transfer
+						case 3:
+							break;
+						// TODO: Funds Transfer Statement
+						case 4:
+							break;
+						// TODO: Account Statement
+						case 5:
+							break;
+					}
+				} while (mainMenuChoice != 0);
+			}
+			else
+			{
+				System.Console.WriteLine("Invalid username and password");
 			}
 
 			// About to exit
